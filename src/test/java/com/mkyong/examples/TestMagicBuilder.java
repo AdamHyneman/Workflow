@@ -15,4 +15,9 @@ public class TestMagicBuilder {
     public void testUnlucky() {
         assertEquals(8, MagicBuilder.getLucky());
     }
+
+    @Test
+    public void Test_Unlucky() {
+        assertEquals(7, MagicBuilder.getLucky());
+    }
 }
