@@ -1,0 +1,19 @@
+package elephantProj.model;
+
+import lombok.Data;
+
+import java.util.Date;
+
+@Data
+public class Backup {
+
+    private Long id;
+
+    private String database;
+    private String point;
+    private Date createdAt;
+    private Date updatedAt;
+    private String status;
+
+    public enum BackupState {PERFORMED, DONE, RESTORE}
+}
